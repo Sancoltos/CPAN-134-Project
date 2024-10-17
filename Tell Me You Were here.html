@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell Me You Were Here</title>
+    <style>
+        body {
+            text-align:center; 
+            font-family:'Calibri','Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: bolder;
+
+        }
+        h3 {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tell Me You Were Here</h1>
+        <h2>
+        <form>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="location">Location:</label>
+            <select id="country" name="country" required>
+                <option value="">--Select Country--</option>
+                <option value="us">USA</option>
+                <option value="ca">Canada</option>
+                <option value="en">England</option>
+                <option value="mx">Mexico</option>
+                <option value="in">India</option>
+                <option value="oth">Other</option>
+
+            </select><br><br>
+            <label for="visitDate">Date of Visit:</label><br>
+            <input type="date" id="visitDate" name="visitDate" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        </h2>
+    <h3>Visitor Record</h3>
+</body>
+</html>

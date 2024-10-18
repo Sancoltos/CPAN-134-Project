@@ -8,6 +8,10 @@
         body {
             text-align:center; 
             font-family:'Calibri';}
+        
+        p {
+            color: aqua;
+        }
             
         #backgroundVideo {
             position: fixed;
@@ -15,23 +19,56 @@
             bottom: 0;
             min-width: 100%;
             min-height: 100%;
-            z-index: -1;    
+            z-index: -1;     
         }
-        
+        a{
+            color: aqua;
+        }
+
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        .nocss a {
+            color: black;
+        }
+
+        .nocss p {
+            color: black;
+        }
+
+        h1 {
+        color: aquamarine;
+        }
     </style>
 </head>
 <body>
     <nav>
-        <a href="Contact.html">Contact</a>
-        <a href="Resume.html">Resume</a>
-        <a href="Programming showcase.html">Programming showcase</a>
-        <a href="Bio.html">Bio</a>
-        <a href="Tell Me You Were here.html">Tell Me You Were here</a>
+        <table border="4" class="center">
+            <tr>
+                <td><a href="Contact.html">Contact</a></td>
+                <td><a href="Resume.html">Resume</a></td>
+                <td><a href="Programming showcase.html">Programming Showcase</a></td>
+                <td><a href="Bio.html">Bio</a></td>
+                <td><a href="Tell Me You Were here.html">Tell Me You Were Here</a></td>
+            </tr>
+        </table>
     </nav>
+    
     <video autoplay muted loop id="backgroundVideo">
-        <source src="Videos/Background Video.mp4" type="video/mp4">
+        <source src="Videos/Background_Video.mp4" type="video/mp4">
     </video>
+    
     <h1>Welcome to Adams Walters<br>Portfolio</h1>
     
+    <img src="Images\Headshot.jpg" alt="Adam Headshot" style="width: 200px; height: 200px;">
+    
+    <div class="nocss"><p><b>There is a secret <a href="Snake Game.html">somewhere</a> in this text</b></p></div>
+    
+    <audio src="Audio/Golden-Hour-chosic.com_.mp3" type="audio/mp3" controls></audio>
+
+    <p>Thanks for coming to see my portfolio. please feel free to look around<br>I have a showcase of projects
+       Im working on and even a surprise if you look hard enough</p>
 </body>
 </html>

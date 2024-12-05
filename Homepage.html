@@ -4,71 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adams CPAN 134 Web Project</title>
-    <style>
-        body {
-            text-align:center; 
-            font-family:'Calibri';}
-        
-        p {
-            color: aqua;
-        }
-            
-        #backgroundVideo {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;     
-        }
-        a{
-            color: aqua;
-        }
-
-        .center {
-        margin-left: auto;
-        margin-right: auto;
-        }
-
-        .nocss a {
-            color: black;
-        }
-
-        .nocss p {
-            color: black;
-        }
-
-        h1 {
-        color: aquamarine;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
 </head>
-<body>
-    <nav>
-        <table border="4" class="center">
-            <tr>
-                <td><a href="Contact.html">Contact</a></td>
-                <td><a href="Resume.html">Resume</a></td>
-                <td><a href="Programming showcase.html">Programming Showcase</a></td>
-                <td><a href="Bio.html">Bio</a></td>
-                <td><a href="Tell Me You Were here.html">Tell Me You Were Here</a></td>
-            </tr>
-        </table>
-    </nav>
+<body class="home">
+<script src="index.js"></script>
+    <div id="menuButton" onclick="toggleSidebar()">☰</div>
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Programming showcase.html">Programming Showcase</a></li>
+            <li><a href="Bio.html">Bio</a></li>
+            <li><a href="Tell Me You Were here.html">Tell Me You Were Here</a></li>
+        </ul>
+    </div>
+    <div class="video-container">
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="Videos/Background_Video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="title">
+        <h1>Welcome to <br> Adams Walters<br>Portfolio</h1>
+    </div>
+    <div>
+    <img src="Images\Headshot.jpg" alt="Adam Headshot" style="width: 200px; height: 200px;" class="headshot">
     
-    <video autoplay muted loop id="backgroundVideo">
-        <source src="Videos/Background_Video.mp4" type="video/mp4">
-    </video>
+    <div>
+        <p class="secret"><a href="Snake Game.html">secret link</a></p>
     
-    <h1>Welcome to Adams Walters<br>Portfolio</h1>
+    </div>
     
-    <img src="Images\Headshot.jpg" alt="Adam Headshot" style="width: 200px; height: 200px;">
     
-    <div class="nocss"><p><b>There is a secret <a href="Snake Game.html">somewhere</a> in this text</b></p></div>
-    
-    <audio src="Audio/Golden-Hour-chosic.com_.mp3" type="audio/mp3" controls></audio>
 
-    <p>Thanks for coming to see my portfolio. please feel free to look around<br>I have a showcase of projects
+    <p class="welcomeMessage">Thanks for coming to see my portfolio<br>. please feel free to look around<br><br>I have a showcase of projects
        Im working on and even a surprise if you look hard enough</p>
 </body>
 </html>

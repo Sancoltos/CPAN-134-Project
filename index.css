@@ -1,0 +1,222 @@
+body.home {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body.Tellme {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+#menuButton {
+    font-size: 12px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    border-radius: 3px;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    overflow: auto;
+    transition: 0.7s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    from {
+        background-color: rgba(0, 0, 0, 1); 
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;   
+    animation: fadeIn 5s;  
+}
+
+.video-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.title {
+    position: absolute;
+    top: 3%;
+    left: 35%;
+    bottom: 75%;
+    right: 35%;
+    background: rgba(245, 162, 78, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(233, 157, 5, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur();
+    border: 3px solid rgba(188, 13, 13, 0.18);
+    z-index: 1;
+    padding-right: 1em;
+    padding-left: 1em;
+    transform: translateX(0%);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.welcomeMessage {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    bottom: 3%;
+    right: 35%;
+    background: rgba(245, 162, 78, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(233, 157, 5, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur();
+    border: 3px solid rgba(188, 13, 13, 0.18);
+    z-index: 1;
+    padding-right: 1em;
+    padding-left: 1em;
+    transform: translateX(0%);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.headshot {
+    position: absolute;
+    top: 36%;
+    left: 43%;
+    bottom: 50%;
+    right: 50%;
+    transform: translateX(0%);
+    border-radius: 7em;
+    box-shadow: 16px 16px 32px 0 rgba(230, 162, 28, 0.3);
+    border: 3px solid rgba(247, 158, 3, 0.5)
+}
+
+.secret {
+    position: absolute;
+    left:20%;
+    color: aqua;
+    
+}
+.secret:visited {
+    color: rgb(24, 21, 207); 
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+select,
+input[type="date"],
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+select:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button {
+    background-color: #3a2bc6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1b34b2;
+}
+
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+}

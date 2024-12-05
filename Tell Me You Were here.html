@@ -4,42 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tell Me You Were Here</title>
-    <style>
-        body {
-            text-align:center; 
-            font-family:'Calibri','Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-            background-color: rgb(110, 60, 157);
-        }
-        table {
-            background-color: aliceblue;
-        }
-        h2 {
-            font-size: 20px;
-            font-weight: bolder;
-
-        }
-        h3 {
-            font-size: 30px;
-        }
-        .center {
-        margin-left: auto;
-        margin-right: auto;
-    }
-        
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <table border="4" class="center">
-            <tr>
-                <td><a href="Homepage.html">Home</a></td>
-                <td><a href="Contact.html">Contact</a></td>
-                <td><a href="Resume.html">Resume</a></td>
-                <td><a href="Programming showcase.html">Programming Showcase</a></td>
-                <td><a href="Bio.html">Bio</a></td>
-            </tr>
-        </table>
-    </nav>
+<body class="Tellme">
+<script src="index.js"></script>
+        <div id="menuButton" onclick="toggleSidebar()">☰</div>
+        <div id="sidebar" class="sidebar">
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="Programming showcase.html">Programming Showcase</a></li>
+                <li><a href="Bio.html">Bio</a></li>
+                
+            </ul>
+        </div>
+    <div class="form-container">
     <h1>Tell Me You Were Here</h1>
         <h2>
         <form>
@@ -63,6 +44,7 @@
             <button type="submit">Submit</button>
         </form>
         </h2>
+</div>
     <h3>Visitor Record</h3>
     
 </body>

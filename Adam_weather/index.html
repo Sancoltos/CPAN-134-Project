@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Weather</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="./index.js"></script>
+    </head>
+    
+</head>
+<body> 
+    <div class="weather-app"> 
+        <div class="container">
+                <h3 class="brand">Adam Weather</h3> 
+            <div class="weatherCity"> 
+            
+            <div>
+                <h1 class="temperature">16</h1>
+            </div>
+            <div class="time-container">
+                <h1 class="City-name">Toronto</h1>
+                <small>
+                    <span class="time">06:00 -</span>
+                    <span class="date">
+                        Saturday November 16
+                    </span>
+                </small>
+                <div class="weather">
+                    <img id="weather-icon" src="icons\01d.png" alt="sun icon">
+                    <span class="condition">Sunny</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="panelSearch"> 
+                <form id="location">
+                    <input type="text"
+                        class="search"
+                        placeholder="search a city name"
+                        />
+                    <button type="submit" class="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="panel1"> 
+        <ul class="cities">
+            <li class="city">Toronto</li>
+            <li class="city">Montreal</li>
+            <li class="city">Vancouver</li>
+            <li class="city">Calgary</li>
+            <li class="city">Ottawa</li>
+        </ul>    
+    </div>
+    <div class="panelDetails"> 
+        <div class="details">
+            <h4>Weather Details</h4>
+            <ul>
+                <li>
+                    <span class="label">Cloudy</span>
+                    <span class="value">75%</span>
+                </li>
+                <li>
+                    <span class="label">Humidity</span>
+                    <span class="value">60%</span>
+                </li>
+                <li>
+                    <span class="label">Wind</span>
+                    <span class="value">10 km/h</span>
+                </li>
+                <li>
+                    <span class="label">Rain</span>
+                    <span class="value">5 mm</span>
+                </li>
+            </ul>
+        </div>
+    
+</body>
+</html>

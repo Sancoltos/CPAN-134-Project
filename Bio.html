@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body class="home">
+    <script src="index.js"></script>
+    <div id="menuButton" onclick="toggleSidebar()">☰</div>
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Programming showcase.html">Programming Showcase</a></li>
+            <li><a href="Tell Me You Were here.html">Tell Me You Were Here</a></li>
+        </ul>
+    </div>
+    <div class="bio-title">
+        <h1>Biography</h1>
+    </div>
+    <div class="bio-text">
+        <p>
+            Adam Walters is a 32-year-old aspiring software developer who spent 15 years as a 
+            technical director in theater before embarking on a career change.
+        </p>
+        <p>
+            Born in the UK and raised in Montreal, Adam moved to Toronto in 2023 to pursue 
+            his new path.
+        </p>
+        <p>
+            His background blends creativity and technical expertise, shaping a unique perspective 
+            on problem-solving and innovation.
+        </p>
+    </div>
+    <div class="video-container"></div>
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="Videos/nature.mp4" type="video/mp4">
+        </video>
+    </div>
 </body>
 </html>

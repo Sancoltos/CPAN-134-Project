@@ -1,0 +1,277 @@
+body { /*all the css to style the website the way I wanted it to look*/
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('images/clouds.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    transition: 500ms;
+    opacity: 1;
+    color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h3 {
+    font-weight: 400;
+}
+
+.weather-app {
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.weather-app::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 1, 1, 0.5);
+    z-index: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3em 3em 4em 3em;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time,
+.temperature,
+.weather {
+    margin: 0 .5em;
+}
+
+
+.time h1 {
+    margin: 0;
+    margin-bottom: 0.2em;
+    font-size: 2em;
+}
+
+.temperature {
+    font-size: 7em;
+    margin: 0;
+}
+
+.weather img {
+    display: block;
+    margin-top: .2em;
+    margin-bottom: 0em;
+}
+
+.panel1 {
+    position: absolute;
+    width: 55%;
+    height: 5%;
+    bottom: 9%;
+    left: 50%;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur();
+    border: 1px solid rgb(225, 225, 225, 0.18);
+    z-index: 1;
+    padding: 1.5em;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+
+
+.details ul {
+    padding: 0 0 1em 0;
+    margin: 2em 0;
+    border-bottom: 1px #ccc solid;
+    overflow-y: auto; 
+    max-height: 200px; 
+    scrollbar-width: none;
+}
+
+.details h4 {
+    text-align: center; 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    color: #ccc;
+}
+
+.details li span {
+    flex-grow: 1;
+}
+
+.details .label {
+    text-align: left;
+    padding-left: 0em;
+    padding-bottom: 2em;
+    width: 45%; 
+}
+
+.details .value {
+    text-align: right;
+    padding-right: 0em;
+    padding-bottom: 2em;
+    width: 45%; 
+}
+
+.cities {
+    text-align: center;
+}
+
+.city {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.city:hover {
+    color: #fff;
+}
+
+.panelSearch {
+    display: flex;
+    width: 17%;
+    height: 5%;
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur();
+    border: 1px solid rgb(225, 225, 225, 0.18);
+    z-index: 0;
+    padding: 1.5em .7em;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel form {
+    margin-bottom: 1em;
+}
+
+.submit {
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 1.3em;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: #ae1c1c;
+    color: #fff;
+    cursor: pointer;
+    font-size: .5em;
+    transition: 0.4s;
+    border-radius: 5px;
+    background-image: url('images/glass.png'); 
+    background-repeat: no-repeat; 
+    background-size: 65%; 
+    background-position: center;
+    
+}
+
+.submit:hover {
+    background: #fff;
+    color: #000;
+}
+
+.search {
+    background: none;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    padding: 0 1em 0.5em 0;
+    width: 80%;
+    color: #fff;
+    font-size: .9em;
+    text-align: center;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search::placeholder {
+    color: #ccc;
+}
+
+.panelDetails {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    bottom: 25%;
+    left: 65%;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur();
+    border: 1px solid rgb(225, 225, 225, 0.18);
+    z-index: 1;
+    padding: 1.5em 3em;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panelDetails ul {
+    margin-top: 2em; 
+}
+
+.weatherCity {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    bottom: 25%;
+    right: 37%;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur();
+    border: 1px solid rgb(225, 225, 225, 0.18);
+    z-index: 1;
+    padding-right: 1em;
+    padding-left: 1em;
+    transform: translateX(-50%);
+    border-radius: 15px;
+}

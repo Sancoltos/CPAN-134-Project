@@ -23,7 +23,7 @@
     <div class="form-container">
     <h1>Tell Me You Were Here</h1>
         <h2>
-        <form>
+        <form onsubmit="handleVisitorSubmit(event)">
             <label for="name">Your name:</label>
             <input type="text" id="name" name="name">
 
@@ -46,6 +46,14 @@
         </h2>
 </div>
     <h3>Visitor Record</h3>
-    
+    <table id="visitorTable" class="visitor-table">
+        <tbody></tbody>
+    </table>
+
+    <div class="video-container"></div>
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="Videos/Galaxy.mp4" type="video/mp4">
+        </video>
+    </div>
 </body>
 </html>

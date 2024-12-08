@@ -4,15 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    body{
-    font-size: 100px;
-    text-align: center;
-    }
-</style>
-
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    Content to come
+<body class="home">
+    <img src="Images/programming.jpg" alt="Background photo" id="resumebackground">
+    <script src="index.js"></script>
+    <div id="menuButton" onclick="toggleSidebar()">☰</div>
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Bio.html">Bio</a></li>
+            <li><a href="Tell Me You Were here.html">Tell Me You Were Here</a></li>
+        </ul>
+    </div>
+    <div class="column" style="text-align: center; margin: 2 auto; padding: px;">
+        <h1 style="color: white;">Programming Showcase</h1>
+    </div>
+    <div class="column-container">
+    <div class="column">
+
+        <h2>Yaply</h2>
+        <img src="Images\Screenshot 2024-12-02 121802.png" alt="Yaply">
+        <p>Yaply is a discord clone designed by myself and 2 of my peers
+            built on express, socket.io, cors and node.js. its a simple 
+            way to chat with your friends. you can find it here:
+            <a href="https://yaply.onrender.com/">Yaply</a>
+        </p>
+    </div>
+
+    <div class="column">
+        <h2>Adam Weather</h2>
+        <img src="Images\AdamWeather.png" alt="Adam Weather">
+        <p>Adma Weather was designed by myself to make naviagting the weather easier.
+            its simple UI allows you to quickly see the weather in your area. without
+            the complex UI of other weather apps. you can find it here:
+            <a href="Adam_weather\index.html">Adam Weather</a>
+        </p>
+
+    </div>
+
+    <div class="column">
+
+        <h2>NFL Score Bot</h2>
+        <img src="Images\score bot.jpg" alt="NFL Score Bot">
+        <p>NFL Score Bot is a google sheets bot that I still have in developement
+            and should be finished by the end of the year.
+        </p>
+
+    </div>
 </body>
 </html>

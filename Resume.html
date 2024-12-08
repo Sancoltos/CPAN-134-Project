@@ -4,56 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <style>
-
-    body {
-        text-align: center;
-    }
-
-    .center {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    iframe {
-            width: 50%;
-            height: 600px;
-            text-align: center;
-            
-    }
-
-    #resumebackground {
-        position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-    }
-    a{
-        color: rgb(231, 61, 14);
-    }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="home">
+    <script src="index.js"></script>
+    <div id="menuButton" onclick="toggleSidebar()">☰</div>
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Programming showcase.html">Programming Showcase</a></li>
+            <li><a href="Bio.html">Bio</a></li>
+            <li><a href="Tell Me You Were here.html">Tell Me You Were Here</a></li>
+        </ul>
+    </div>
 
     <img src="Images/Resume Background.jpg" alt="Background photo" id="resumebackground">
 
-    <nav>
-        <table border="4" class="center">
-            <tr>
-                <td><a href="Homepage.html">Home</a></td>
-                <td><a href="Contact.html">Contact</a></td>
-                <td><a href="Programming showcase.html">Programming Showcase</a></td>
-                <td><a href="Bio.html">Bio</a></td>
-                <td><a href="Tell Me You Were here.html">Tell Me You Were Here</a></td>
-            </tr>
-        </table>
-    </nav>
+    <div class="resume-title">
+        <h1>My Resume</h1>
+    </div>
 
-    <h1>PDF Document</h1>
-    <iframe src="https://1drv.ms/b/c/7bba68d2662cec28/IQQEWT8AeW34Qp7QZCr3BqoBAVI5CeHq-3EKhRB6kiaXA4I" width="100%" height="120" frameborder="0" 
-    style="margin: auto; display: block; border: none;" scrolling="no"></iframe>
+    <iframe class="resume-iframe" 
+        src="Images/CV Adam Walters.pdf#toolbar=0&navpanes=0&scrollbar=0&embedded=true&view=FitH"
+        frameborder="0" 
+        scrolling="yes">
+    </iframe>
 </body>
 </html>

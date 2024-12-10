@@ -3,8 +3,10 @@ function toggleSidebar(event) {
     const sidebar = document.getElementById('sidebar');
     if (sidebar.style.left === '-250px') {
         sidebar.style.left = '0';
+        sidebar.style.zIndex = '10';
     } else {
         sidebar.style.left = '-250px';
+        sidebar.style.zIndex = '1';
 
         window.addEventListener('click', function closeMenu(e) {
             if (!sidebar.contains(e.target) && !menuButton.contains(e.target)) {
